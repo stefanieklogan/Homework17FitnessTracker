@@ -12,8 +12,8 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 app.use(express.static("public"));
-require("./routes/htmlRoutes.js");
-require("./routes/apiRoutes.js");
+require("./routes/htmlroutes.js");
+require("./routes/apiroutes.js");
 
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/fitnesstracker", {
   useNewUrlParser: true,
