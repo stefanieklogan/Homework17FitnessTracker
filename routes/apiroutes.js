@@ -1,7 +1,7 @@
 var db = require("..models/workout");
-const router = require("express").Router();
 const Workout = require("../models/workout.js");
 
+module.exports = function(app) {
 //get all workouts
 router.get("/api/workouts", function (req, res) {
     db.find({}).then(function (workout) {
@@ -29,5 +29,4 @@ router.put("/api/workouts/:id", function (req, res) {
 });
 
 //get stats page
-
-module.exports = router;
+}

@@ -1,7 +1,13 @@
 var path = require('path');
 
-//route for /
+module.exports = function(app) {
 
+//route for /
+app.get("/", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/index.html"));
+  });
 //route for /exercise
 
 //route for /stats
+
+}
