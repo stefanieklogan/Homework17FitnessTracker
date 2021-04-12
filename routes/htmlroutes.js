@@ -6,8 +6,14 @@ module.exports = function(app) {
 app.get("/", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/index.html"));
   });
+
 //route for /exercise
+app.get("/exercise", function(req, res) {
+  res.sendFile(path.join(__dirname, "../public/exercise.html"));
+})
 
 //route for /stats
-
+app.get("/stats", function(req, res) {
+  res.sendFile(path.join(__dirname, "../public/stats.html"));
+})
 }
