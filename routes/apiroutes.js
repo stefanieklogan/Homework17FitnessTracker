@@ -4,7 +4,7 @@ const Workout = require("../models/workout.js");
 
 module.exports = function(app) {
 //get all workouts
-router.get("/api/workouts", function (req, res) {
+app.get("/api/workouts", function (req, res) {
     db.find({}).then(function (workout) {
         res.send(workout);
     })
@@ -14,14 +14,17 @@ router.get("/api/workouts", function (req, res) {
 });
 
 //create workout
-router.post("/api/workouts", function (req, res) {
+app.post("/api/workouts", function (req, res) {
     db.create(req.body).then(function (data) {
         res.send(data)
     })
+    .catch(function (err) {
+        res.send(err);
+    });
 })
 
 //update workout by id
-router.put("/api/workouts/:id", function (req, res) {
+app.put("/api/workouts/:id", function (req, res) {
     var id = req.params.id;
     db.findByAndUpdate(id, { $push: { exercises: req.body } })
         .then(function (data) {
@@ -30,4 +33,5 @@ router.put("/api/workouts/:id", function (req, res) {
 });
 
 //get stats page
+
 }
