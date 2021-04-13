@@ -13,6 +13,8 @@
 
 * Deployed application: https://blooming-chamber-74383.herokuapp.com/
 
+![homepage image](https://github.com/stefanieklogan/Homework17FitnessTracker/blob/main/public/images/homepage.JPG)
+
 <a name="overview"></a>
 ## Project overview
 
@@ -20,7 +22,7 @@
 
 * Real-time dashboard metrics of last seven days:
 
-![dashboard image](https://github.com/stefanieklogan/Homework13E-Commerce/blob/main/assets/product.JPG)
+![dashboard image](https://github.com/stefanieklogan/Homework17FitnessTracker/blob/main/public/images/dashboard.JPG)
 
 <a name="depend"></a>
 ## Dependencies
@@ -47,7 +49,7 @@
 <a name="notes"></a>
 ## Notes
 
-* xxxxxxxxxxxx
+* Future development includes "fitness w friends" to track their progress and yours. Earn credentials and badges for fitness milestones and self-directed goals.
 
 <a name="streetcred"></a>
 ## The other stuff: License & Badges
