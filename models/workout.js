@@ -22,6 +22,11 @@ const workoutSchema = new Schema(
 );
 
 //Total duration calc
+workoutSchema.virtual("totalDuration").get(function() {
+$addFields: {
+    totalDuration: { $sum: '$exercises.duration'}
+}
+  });
 
 
 const Workout = mongoose.model("Workout", workoutSchema);
