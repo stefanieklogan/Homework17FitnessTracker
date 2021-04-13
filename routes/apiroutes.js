@@ -33,5 +33,15 @@ app.put("/api/workouts/:id", function (req, res) {
 });
 
 //get stats page
-
+app.get("/api/workouts/range", (req,res) => {
+    db.find({})
+    .then(workout => {
+      res.json(workout);
+    })
+    .catch(err => {
+      res.json(err);
+    });
+  });
+  
+  //final bracket for module export
 }
