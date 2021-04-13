@@ -11,12 +11,16 @@
 <a name="application"></a>
 ## Application
 
-* Deployed application: xxxxxxxxxxxxxxxxx
+* Deployed application: https://blooming-chamber-74383.herokuapp.com/
 
 <a name="overview"></a>
 ## Project overview
 
 * "Keeping your body working until you go to sleep." In a world where we want instant gratification and tracking of where we spend our time, this app answers that call. Allow yourself real-time data and graphs showcasing your cardio & strength training journey by using this app.
+
+* Real-time dashboard metrics of last seven days:
+
+![dashboard image](https://github.com/stefanieklogan/Homework13E-Commerce/blob/main/assets/product.JPG)
 
 <a name="depend"></a>
 ## Dependencies
@@ -24,6 +28,10 @@
 * MongoDB
 
 * express
+
+* morgan
+
+* mongoose
 
 <a name="install"></a>
 ## Installation
