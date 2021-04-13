@@ -29,7 +29,7 @@ module.exports = function (app) {
             })
     });
 
-    //get stats page
+    //get dashboard page
     app.get("/api/workouts/range", (req, res) => {
         db.find({})
             .then(workout => {
