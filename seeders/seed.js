@@ -43,6 +43,12 @@ let workoutSeed = [
         weight: 185,
         reps: 8,
         sets: 4
+      },
+      {
+        type: "cardio",
+        name: "Running",
+        duration: 25,
+        distance: 4
       }
     ]
   },

@@ -31,7 +31,7 @@ module.exports = function (app) {
 
     //get dashboard page
     app.get("/api/workouts/range", (req, res) => {
-        db.find({})
+        db.find({}).limit(7)
             .then(workout => {
                 res.json(workout);
             })
